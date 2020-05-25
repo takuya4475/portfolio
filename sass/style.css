@@ -10,11 +10,17 @@
 body {
   margin: 0;
   color: #333;
+  font-family: "Hiragino Kaku Gothic Pro" , "Meiryo" , sans-serif;
 }
 
 .txtl {
   font-size: 28px;
   font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.txtm {
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -42,7 +48,7 @@ header header img {
           justify-content: space-between;
   background-color: #fff;
   width: 100%;
-  padding: 15px 50px;
+  padding: 15px;
 }
 
 .btn {
@@ -53,7 +59,7 @@ header header img {
   border-radius: 25px;
   text-align: center;
   display: inline-block;
-  margin-right: 70px;
+  margin-right: 20px;
 }
 
 .btn a {
@@ -75,5 +81,16 @@ header header img {
   background-size: cover;
   height: 500px;
   text-align: center;
+}
+
+.isara-top h1 {
+  margin-top: 20px;
+  padding-top: 80px;
+  line-height: 50px;
+}
+
+.isara-top p {
+  font-weight: 600;
+  margin-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */
