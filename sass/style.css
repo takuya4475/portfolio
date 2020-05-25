@@ -15,4 +15,25 @@ p {
 header img {
   vertical-align: bottom;
 }
+
+.btn {
+  width: 318px;
+  height: 44px;
+  border: 1px solid #D86C67;
+  background-color: #D86C67;
+  border-radius: 25px;
+  text-align: center;
+  display: inline-block;
+  float: right;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+}
 /*# sourceMappingURL=style.css.map */
