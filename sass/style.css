@@ -7,6 +7,17 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  color: #333;
+}
+
+.txtl {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
 .header-in p {
   margin: 0;
   display: inline-block;
@@ -57,5 +68,12 @@ header header img {
 .btn a:hover {
   background-color: #e29390;
   border-radius: 25px;
+}
+
+.isara-top {
+  background-image: url(../img/main.jpg);
+  background-size: cover;
+  height: 500px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
