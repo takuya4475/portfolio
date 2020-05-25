@@ -7,13 +7,31 @@
   box-sizing: border-box;
 }
 
-p {
+.header-in p {
   margin: 0;
   display: inline-block;
 }
 
-header img {
+header {
+  height: 70px;
+}
+
+header header img {
   vertical-align: bottom;
+}
+
+.header-in {
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  width: 100%;
+  padding: 15px 50px;
 }
 
 .btn {
@@ -24,7 +42,7 @@ header img {
   border-radius: 25px;
   text-align: center;
   display: inline-block;
-  float: right;
+  margin-right: 70px;
 }
 
 .btn a {
@@ -33,7 +51,11 @@ header img {
   font-size: 14px;
   display: block;
   height: 100%;
-  width: 100%;
   padding-top: 10px;
+}
+
+.btn a:hover {
+  background-color: #e29390;
+  border-radius: 25px;
 }
 /*# sourceMappingURL=style.css.map */
