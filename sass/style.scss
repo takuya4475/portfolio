@@ -84,29 +84,40 @@ header{
 .ask{
   background-color: #EBB94D;
   height: 600px;
-  color:#fff
+  color:#fff;
+  .txtm{
+    padding-top: 33px;
+  }
+  &-point{
+    background: #f9f2f4;
+    border-radius: 3px;
+    color: #c7254e;
+    width: 420px;
+    margin: 20px auto 50px;
+    font-weight: bolod;
+  }
 }
 
 .btn2{
-  width: 318px;
-  height: 44px;
+  width: 80%;
+  height: 104px;
   border: 1px solid $btn;
-  background-color: $btn;
-  border-radius: 25px;
+  background-color: darken($btn ,10%);
+  border-radius: 50px;
   text-align: center;
-  display: inline-block;
-  margin-right: 20px;
+  margin: 0 auto;
+  margin-bottom: 60px;
   a{
     text-decoration: none;
     color: #fff;
-    font-size: 14px;
+    font-size: 28px;
     display: block;
     height: 100%;
-    // width: 100%; //ボタンを親要素いっぱいにするためだが入らない。
-    padding-top: 10px;
+    line-height: 104px;
     &:hover{
       background-color: $btn;
-      border-radius: 25px;
+      border-radius: 50px;
+      background-color: $btn;
     }
   }
 }
