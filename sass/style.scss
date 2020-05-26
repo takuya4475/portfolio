@@ -82,3 +82,26 @@ header{
   color:#fff
 }
 
+.btn2{
+  width: 318px;
+  height: 44px;
+  border: 1px solid $btn;
+  background-color: $btn;
+  border-radius: 25px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 20px;
+  a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    height: 100%;
+    // width: 100%; //ボタンを親要素いっぱいにするためだが入らない。
+    padding-top: 10px;
+    &:hover{
+      background-color: lighten($btn, 10%);
+      border-radius: 25px;
+    }
+  }
+}
