@@ -4,6 +4,11 @@
 
 $btn : #D86C67;
 
+p, h1, h2{
+  text-align: center;
+  margin: 0;
+}
+
 .txtl{
   font-size: 28px;
   font-weight: 600;
@@ -100,7 +105,7 @@ header{
     // width: 100%; //ボタンを親要素いっぱいにするためだが入らない。
     padding-top: 10px;
     &:hover{
-      background-color: lighten($btn, 10%);
+      background-color: $btn;
       border-radius: 25px;
     }
   }
