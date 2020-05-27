@@ -3,11 +3,13 @@
 
 
 $btn : #D86C67;
+$image-color : #eab857;
 
 p, h1, h2{
   text-align: center;
   margin: 0;
 }
+
 
 .txtl{
   font-size: 28px;
@@ -33,6 +35,7 @@ header{
   
 .header-in{
   position: fixed;
+  z-index: 10;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -145,6 +148,7 @@ header{
   background: url('../img/introbottom.jpg');
   background-size: cover;
   height: 560px;
+  position: relative;
   
   .txtbox{  
     width: 860px;
@@ -157,21 +161,37 @@ header{
     }
     &::before{
       @extend %befoafter;
-      border-top: 5px solid #eab857;
-      border-left: 5px solid #eab857;
+      border-top: 5px solid $image-color;
+      border-left: 5px solid $image-color;
       top: 0;
       left: 0;
     } 
     &::after {
       @extend %befoafter;
-      border-bottom: 5px solid #eab857;
-      border-right: 5px solid #eab857;
+      border-bottom: 5px solid $image-color;
+      border-right: 5px solid $image-color;
       bottom: 0;
       right: 0;
     }
   }
 }
-span .underline{
-  background: liner(transparent 70% #EAB857 50%);
+.underline{
+  background: linear-gradient(transparent 70%, #eab857 50%);
   font-weight: 600;
+}
+
+.about-btn{
+  color: #fff;
+  background-color: $image-color;
+  height: 80px;
+  width:  80px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  p{
+    line-height: 80px;
+  }
 }
