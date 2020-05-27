@@ -148,33 +148,31 @@ header{
   background: url('../img/introbottom.jpg');
   background-size: cover;
   height: 560px;
+  position: relative; 
+}
+.txtbox{  
+  width: 860px;
+  max-width: calc(100% -40px);
+  margin: 0 auto;
   position: relative;
-  
-  .txtbox{  
-    width: 860px;
-    max-width: calc(100% -40px);
-    margin: 0 auto;
-    position: relative;
-    .txtl{
-      
-      padding: 30px 0 30px 0;
-    }
-    &::before{
-      @extend %befoafter;
-      border-top: 5px solid $image-color;
-      border-left: 5px solid $image-color;
-      top: 0;
-      left: 0;
-    } 
-    &::after {
-      @extend %befoafter;
-      border-bottom: 5px solid $image-color;
-      border-right: 5px solid $image-color;
-      bottom: 0;
-      right: 0;
-    }
+  &::before{
+    @extend %befoafter;
+    border-top: 5px solid $image-color;
+    border-left: 5px solid $image-color;
+    top: 0;
+    left: 0; 
+  }
+  &::after {
+    @extend %befoafter;
+    border-bottom: 5px solid $image-color;
+    border-right: 5px solid $image-color;
+    bottom: 0;
+    right: 0;
   }
 }
+  .txtl{
+    padding: 30px 0 30px 0;
+  }
 .underline{
   background: linear-gradient(transparent 70%, #eab857 50%);
   font-weight: 600;
@@ -193,5 +191,13 @@ header{
   margin: 0 auto;
   p{
     line-height: 80px;
+  }
+}
+
+.about{
+  background: #fef5e0;
+  padding-top: 40px;
+  .txtm{
+    font-weight: 600;
   }
 }
