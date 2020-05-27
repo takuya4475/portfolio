@@ -85,6 +85,7 @@ header{
   background-color: #EBB94D;
   height: 600px;
   color:#fff;
+  margin-bottom: 50px;
   .txtm{
     padding-top: 33px;
   }
@@ -129,4 +130,48 @@ header{
   text-align: center;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+////fleedom/////////
+%befoafter{
+  content: '';
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display : inline-block;
+}
+
+.freedom{
+  background: url('../img/introbottom.jpg');
+  background-size: cover;
+  height: 560px;
+  
+  .txtbox{  
+    width: 860px;
+    max-width: calc(100% -40px);
+    margin: 0 auto;
+    position: relative;
+    .txtl{
+      
+      padding: 30px 0 30px 0;
+    }
+    &::before{
+      @extend %befoafter;
+      border-top: 5px solid #eab857;
+      border-left: 5px solid #eab857;
+      top: 0;
+      left: 0;
+    } 
+    &::after {
+      @extend %befoafter;
+      border-bottom: 5px solid #eab857;
+      border-right: 5px solid #eab857;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+span .underline{
+  background: liner(transparent 70% #EAB857 50%);
+  font-weight: 600;
 }
