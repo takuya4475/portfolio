@@ -227,3 +227,25 @@ header{
     margin-top: 10px;
   }
 }
+
+// about-second
+.about-second{
+  background-image: url(../img/aboutsecondbg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  h1{
+    color: #fff;
+    padding-top: 50px;
+    font-weight: 600;
+  }
+  h2{
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 55px;
+    span{
+     color: $image-color; 
+    }
+  }
+}
