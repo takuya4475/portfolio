@@ -199,5 +199,31 @@ header{
   padding-top: 40px;
   .txtm{
     font-weight: 600;
+    margin-bottom: 30px;
+  }
+}
+
+// about部分
+
+.about-box{
+  margin: 30px;
+  padding: 20px;
+  padding-bottom: 0;
+  border: 2px solid $image-color;
+  border-radius: 3px;
+  background-color: #fff;
+  height: 230px;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+}
+.picturebox{
+  text-align: center;
+  width: 155px;
+  height: 135px;
+  p{
+    font-size: 12px;
+    margin-top: 10px;
   }
 }
