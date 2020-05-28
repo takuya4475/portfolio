@@ -267,3 +267,19 @@ header{
   width: 90%;
   border-radius: 5px;
 }
+
+.slillup{
+  background-color: #246EA9;
+  height: 140px;
+  h2{
+    color: #fff;
+    font-size: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    letter-spacing: 2px;
+    font-weight: 400px;
+    span{
+      color: $image-color;
+    }
+  }
+}
