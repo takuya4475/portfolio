@@ -21,6 +21,10 @@ p, h1, h2{
   font-size: 20px;
   margin-bottom: 10px;
 }
+
+txts{
+  font-size: 16px;
+}
 .header-in p{
   margin: 0;
   display: inline-block;
@@ -271,6 +275,7 @@ header{
 .slillup{
   background-color: #246EA9;
   height: 140px;
+  margin-bottom: 67px;
   h2{
     color: #fff;
     font-size: 20px;
@@ -281,5 +286,33 @@ header{
     span{
       color: $image-color;
     }
+  }
+}
+
+.learning{
+  letter-spacing: 1.5px;
+  .flex{
+    margin-bottom: 30px;
+  }
+  .txts{
+    font-weight: 600;
+  }
+  h2{
+    font-size: 28px;
+    margin-bottom: 50px;
+    span{
+      font-size: 0.7em;
+      font-weight: 500;
+    }
+  }
+  p{
+    margin-bottom: 40px;
+  }
+  img{
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
