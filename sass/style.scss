@@ -417,3 +417,47 @@ header{
     }
   }
 }
+
+.question{
+  background-color: $image-color;
+  padding-top: 30px;
+  position: relative;
+  &-radius{
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    line-height: 85px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    color: $image-color;
+    position: relative;
+  }
+  .txtbox::before{
+    border-top-color: #fff;
+    border-left-color: #fff;
+  }
+
+  .txtbox::after{
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+  }
+  .txtl{
+    color: #fff;
+    margin-bottom: 0;
+  }
+  &::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    margin-right: -25px;
+    width: 0;
+    height: 0;
+    border-top: 30px solid $image-color;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid transparent;
+  }
+}
