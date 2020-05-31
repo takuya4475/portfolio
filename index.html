@@ -256,6 +256,27 @@
     </div>
     <button type="button">送　信</button>
   </div>
-
+  <div class="faq">
+    <div class="faq-container">
+      <div class="faq-q_and_a">
+        <h4 class="faq-qes hidden">プログラミングスキルは必要ですか<span>+</span></h4>
+        <div class="faq-ans">いいえ、必要ありません。しかし、iSaraでは参加費以上の金額が稼げることを保障しています。 従って、事前通話面談時点で簡単なテストを実施し、場合によってはお断りをしております。この点だけはご了承ください。</div>
+      </div>
+    </div>
+  </div>
+  <div style="font-size: 50px; ">copy right</div>
+  <script src="jquery.min.js"></script>
+    <script>
+      $('.faq-qes').on('click',function(){
+        $(this).next().slideToggle(100);
+        if($(this).hasClass('hidden')){
+          $(this).removeClass('hidden');
+          $(this).children('span').text('-');
+        }else{
+          $(this).addClass('hidden');
+          $(this).children('span').text('+');
+        }
+      });
+    </script>
   </body>
 </html>

@@ -531,3 +531,35 @@ header{
     font-weight: 600;
   }
 }
+
+.faq{
+  padding-bottom: 500px;
+  padding-top: 30px;
+  margin: 0 auto;
+  width: 80%;
+  &-container{
+    margin: 0 auto;
+    height: 65px;
+    
+  }
+  &-qes{
+    padding-left: 15px;
+    line-height: 65px;
+    font-size: 20px;
+    font-weight: bold;
+    border : 1px solid #E5E5E5;
+    cursor: pointer;
+  }
+  &-ans{
+    padding: 15px 15px 40px 15px;
+    font-weight: 600;
+    text-align: left;
+    display: none;
+  }
+}
+.faq-qes span{
+  float: right;
+  margin-right: 20px;
+  font-size: 40px;
+  color: #E5E5E5;
+}
