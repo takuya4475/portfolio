@@ -533,13 +533,11 @@ header{
 }
 
 .faq{
-  padding-bottom: 500px;
   padding-top: 30px;
   margin: 0 auto;
   width: 80%;
   &-container{
     margin: 0 auto;
-    height: 65px;
     
   }
   &-qes{
@@ -548,13 +546,19 @@ header{
     font-size: 20px;
     font-weight: bold;
     border : 1px solid #E5E5E5;
+    margin-bottom: 10px;
     cursor: pointer;
+    &:hover{
+      text-decoration: underline;
+    }
   }
   &-ans{
     padding: 15px 15px 40px 15px;
     font-weight: 600;
     text-align: left;
     display: none;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #e5e5e5;
   }
 }
 .faq-qes span{
@@ -562,4 +566,25 @@ header{
   margin-right: 20px;
   font-size: 40px;
   color: #E5E5E5;
+}
+
+.ft{
+  height: 150px;
+  background-color: #ECECEC;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &-container{
+    margin: 0 auto;
+    width: 40%;
+    text-align: center;
+  }
+  &-ttl{
+    font-size: 12px;
+  }
+  &-sbttl{
+    font-size: 12px;
+  }
+  &-sns{
+    margin-top: 20px;
+  }
 }
