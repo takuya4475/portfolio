@@ -264,6 +264,9 @@ header{
     color: #fff;
     padding-top: 50px;
     font-weight: 600;
+    br{
+      display: none;
+    }
   }
   h2{
     color: #fff;
@@ -272,6 +275,9 @@ header{
     line-height: 55px;
     span{
      color: $image-color; 
+     br{
+       display: none;
+     }
     }
   }
 }
@@ -348,6 +354,9 @@ header{
     padding-bottom: 10px;
     margin-bottom: 50px;
     letter-spacing: 2px;
+    br{
+      display: none;
+    }
   }
 
   .three-content{
@@ -381,6 +390,9 @@ header{
   }
   .txtm{
     font-weight: 600;
+    br{
+      display: none;
+    }
   }
   p{
     font-weight: 600;
@@ -698,10 +710,14 @@ header{
    }
  }
  
- .about-box{
-   .flex{
+ .about{
+   padding-bottom: 40px;
+ }
+   .about-box{
+     width: 95%;
+     height: 180px;
+     .flex{
      flex-direction: row;
-     justify-content: space-around;
      img{
        width: 20%;
        height: 20%;
@@ -712,6 +728,108 @@ header{
    }
  }
 
+ .about-second{
+   height: 800px;
+   h1{
+     font-size: 1em;
+     br{
+       display: inline-block;
+     }
+   }
+   .txtm{
+    font-size: calc(14px + 0.25vw);
+    line-height: 35px;
+   }
+    span{
+      br{
+        display: inline-block;
+        line-height: 1em;
+      }
+    }
+    .flex{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card{
+      width: 90%;
+      height: 178px;
+      border-radius: 5px;
+      margin: 10px auto;
+
+    }
+  }
+  .slillup{
+    h2{
+      font-size: 17px;
+    }
+  }
+  
+  .learning{
+    h2{
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .flex{
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      img{
+        display: block;
+        width: 20%;
+        height: 20%;
+      }
+    }
+    .txts{
+      font-size: 14px;
+    }
+  }
+
+  .merit{
+    .txtm{
+      font-weight: 400;
+      br{
+        display: inline-block;
+      }
+    }
+    .spanl{
+      font-size: 22px;
+      font-weight: 400;
+    }
+    .three-content{
+      margin: 20px auto;
+      width: 100%;
+      p{
+        text-align: left;
+      }
+    }
+    .learnbox{
+      width: 100%;
+      height: 120px;
+      background-position: center;
+    }
+    .orange-font{
+      font-weight: 400;
+    }
+    > p{
+      font-size: 0.8em;
+      br{
+        display: inline-block;
+      }
+    }
+  }
+  
+  //about-box
+  .about-box{
+    padding-top: 10px;
+    h2{
+      font-size: 1.4em;
+      font-weight: 400;
+    }
+    .txts{
+      font-size: 10px;
+    }
+  }
 
 
 }//sp//
