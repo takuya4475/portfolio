@@ -187,6 +187,7 @@ header{
     border-right: 5px solid $image-color;
     bottom: 0;
     right: 0;
+    margin-bottom: 15px;
   }
   .txtl{
     padding: 30px 0 30px 0;
@@ -412,12 +413,13 @@ header{
     color: #fff;
     margin-top: 40px;
     margin-bottom: 40px;
+    br{
+      display: none;
+    }
   }
   .members{
     display: flex;
     justify-content: center;
-    width: 810px;
-    margin: 0 auto;
     margin: 20px auto;
     flex-wrap: wrap;
   }
@@ -620,6 +622,27 @@ header{
 
 // @media スマホ
 @include mq('sp'){
+   .txtbox::after {
+    border-bottom: 3px solid #eab857;
+    border-right: 3px solid #eab857;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 15px;
+  }
+  .txtbox::before{
+    border-top: 3px solid $image-color;
+    border-left: 3px solid $image-color;
+    top: 0;
+    left: 0;
+  }
+  .txtbox::before, .txtbox::after {
+    content: '';
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    display: inline-block;
+  }
+  
   .txtm{
     font-size: calc(16px + 0.25vw);
   }
@@ -698,7 +721,6 @@ header{
    }
  }
   .txtbox {
-    margin: 0 auto;
     width: 80%;
   }
  .freedom{
@@ -831,5 +853,82 @@ header{
     }
   }
 
+  //teacher
+  
+  .teacher{
+    padding: 0;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    p{
+      font-size: 1.2em;
+      font-weight: 400;
+      br{
+        display: inline-block;
+      }
+    }
+    .members{
+      flex-direction: column;
 
+    }
+    .member{
+      margin: 0 auto;
+      width: 95%;
+      img{
+        width: 20%;
+      }
+    }
+    p{
+      font-size: 0.8em;
+    }
+  }
+  .question{
+    margin-bottom: 30px;
+    .txtl{
+      font-size: 1em;
+      line-height: 20px; 
+    }
+    .txtbox{
+      margin-bottom: 30px;
+    }
+  }
+  .answer{
+    padding-top: 15px;
+    .txtm{
+      font-size: 12px;
+    }
+    .txts{
+      font-size: 11px;
+    }
+    &-ceo{
+      width: 100%;
+    }
+  }
+  
+  .form{
+    padding-bottom: 20px;
+    .control{
+      width: 90%;
+    }
+    button{
+      width: 90%;
+    }
+    
+  }
+  .faq{
+    width: 90%;
+    &-qes{
+      font-size: 15px;
+    }
+    &-ans{
+      font-size: 12px;
+    }
+  }
+  .ft{
+    &-container{
+      width: 50%;
+    }
+    &-ttl{
+      font-weight: 400;
+    }
+  }
 }//sp//
