@@ -31,6 +31,9 @@
     <img src="img/isaralogolarge.png">
     <p class="txtm">バンコクのノマドエンジニア育成講座<br>iSara[イサラ]</p>
   </div>
+  <div id="scrolling">
+    <i class="fa fa-chevron-up"></i>
+  </div>
 
   <!-- 問合せ&ニュースページ -->
   <div class="ask">
@@ -318,17 +321,6 @@
     </div>
   </div>
   <script src="jquery.min.js"></script>
-    <script>
-      $('.faq-qes').on('click',function(){
-        $(this).next().slideToggle(300);
-        if($(this).hasClass('hidden')){
-          $(this).removeClass('hidden');
-          $(this).children('span').text('-');
-        }else{
-          $(this).addClass('hidden');
-          $(this).children('span').text('+');
-        }
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
